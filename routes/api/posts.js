@@ -234,3 +234,7 @@ router.delete('/comment/:id/:comment_id', auth, async (req, res) => {
 })
 
 module.exports = router
+
+router.get('/', (r) => {
+  asdsdad, asdasdas, asdsadsa
+})
