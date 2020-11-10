@@ -7,7 +7,7 @@ import { addExperience } from '../../actions/profile'
 const AddExperience = ({ addExperience, history }) => {
   const [formData, setFormData] = useState({
     company: '',
-    tittle: '',
+    title: '',
     location: '',
     from: '',
     to: '',
@@ -16,7 +16,7 @@ const AddExperience = ({ addExperience, history }) => {
   })
 
   const [toDateDisabled, toggleDisabled] = useState(false)
-  const { company, tittle, location, from, to, current, description } = formData
+  const { company, title, location, from, to, current, description } = formData
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value })
   return (
@@ -37,10 +37,10 @@ const AddExperience = ({ addExperience, history }) => {
         <div class='form-group'>
           <input
             type='text'
-            value={tittle}
+            value={title}
             onChange={(e) => onChange(e)}
             placeholder='* Job Title'
-            name='tittle'
+            name='title'
             required
           />
         </div>
